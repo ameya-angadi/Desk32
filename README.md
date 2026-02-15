@@ -60,7 +60,7 @@ Install the ESP32 Board library via the Arduino Boards Manager:
 * **LVGL (v8.3.x)** - Graphics Engine.
 
 ### **2. Critical Setup Note**
-To match the UI design, you must **delete** the default `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory and **paste** the versions provided in this repository's `/Files_To_Copy` folder.
+To match the UI design, you must **delete** the default `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory. **Extract** all the files and folders provided in this Zip file `Files_To_Copy.zip`. Copy all the `lvgl`, `ui` folders, and `lv_conf.h` from this zip file at `Documents\Arduino\libraries\` directory.
 
 ### **3. Configuration**
 Update your WiFi and API credentials in the main firmware:

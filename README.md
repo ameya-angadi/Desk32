@@ -11,15 +11,8 @@
 
 ---
 
-## Video Demonstration
-[![Desk32 Demo Video](Images/Desk32_Thumbnail.png)](https://youtu.be/7ImN2L3nb7k)
-
-*Click the above image to watch the full technical walkthrough and performance demo.*
-
----
-
 ## Key Features
-* **Pomodoro Engine:** Custom work/break cycles with automated transitions.
+* **Pomodoro Timer:** Custom work/break cycles with automated transitions.
 * **Dynamic Task Manager:** Smart Task manager to add tasks and mark them complete.
 * **Health Reminders:** Smart hydration alerts triggered every 30 minutes to maintain physical wellness.
 * **Wire-Free Integration:** Zero "spaghetti wiring" thanks to the integrated S3-BOX-3 architecture.
@@ -58,13 +51,16 @@ The assembly of Desk32 is a seamless, "snap-fit" process that eliminates the nee
 
 ### **1. Libraries Required**
 Install the following via the Arduino Library Manager:
-* **LVGL (v8.3.x)** - Graphics Engine.
+* **LVGL (v8.3.11)** - Graphics Engine.
 * **ArduinoJson** - Weather API parsing.
 * **ESP Panel** - Hardware drivers.
 * **NTP Client** - Time synchronization.
 
+Install the ESP32 Board library via the Arduino Boards Manager:
+* **LVGL (v8.3.x)** - Graphics Engine.
+
 ### **2. Critical Setup Note**
-To match the UI design, you must **delete** the default `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory and **paste** the versions provided in this repository's `/Libraries` folder.
+To match the UI design, you must **delete** the default `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory and **paste** the versions provided in this repository's `/Files_To_Copy` folder.
 
 ### **3. Configuration**
 Update your WiFi and API credentials in the main firmware:
@@ -82,6 +78,12 @@ The interface was crafted using **SquareLine Studio**, a visual UI editor. This 
 
 ![UI Screen Collage](Images/Screens.png)
 
+---
+
+## Video Demonstration
+[![Desk32 Demo Video](Images/Desk32_Thumbnail.png)](https://youtu.be/7ImN2L3nb7k)
+
+*Click the above image to watch the full technical walkthrough and performance demo.*
 ---
 
 ## Future Improvements

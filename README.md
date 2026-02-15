@@ -62,6 +62,8 @@ Install the ESP32 Board library via the Arduino Boards Manager:
 ### **2. Critical Setup Note**
 To match the UI design, you must **delete** the default `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory. **Extract** all the files and folders provided in this Zip file `Files_To_Copy.zip`. Copy all the `lvgl`, `ui` folders, and `lv_conf.h` from this zip file at `Documents\Arduino\libraries\` directory.
 
+If you wish to modify the UI, open the .spj file located in `/Desk_FAile` using SquareLine Studio (v1.3.x or later). Followed by using Create template button in Squareline Studio and save this template at the desired location. Further the orignal  `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory should be replaced by  `lvgl`, `ui` folders, and `lv_conf.h` from your saved location.
+
 ### **3. Configuration**
 Update your WiFi and API credentials in the main firmware:
 ```cpp

@@ -32,11 +32,11 @@ using namespace esp_panel::drivers;
 using namespace esp_panel::board;
 
 // --- USER CONFIGURATION (Update These) ---
-const char* ssid = "Excitel_SAP 2.4G";                      // Update: Your WiFi SSID
-const char* password = "Sap180125";                         // Update: Your WiFi Password
-const char* apiKey = "c1cdd20a0c278f22fd0e3c5c07e704cb";    // Update: OpenWeatherMap API Key
-const char* city = "Bengaluru";                             // Update: Your City
-const char* country = "IN";                                 // Update: Your Country Code
+const char* ssid = "";                             // Update: Your WiFi SSID
+const char* password = "";                         // Update: Your WiFi Password
+const char* apiKey = "";                           // Update: OpenWeatherMap API Key
+const char* city = "";                             // Update: Your City
+const char* country = "";                          // Update: Your Country Code
 
 // Timezone Settings (India)
 const long gmtOffset_sec = 19800;

@@ -56,13 +56,12 @@ Install the following via the Arduino Library Manager:
 * **ESP Panel** - Hardware drivers.
 * **NTP Client** - Time synchronization.
 
-Install the ESP32 Board library via the Arduino Boards Manager:
-* **LVGL (v8.3.x)** - Graphics Engine.
+Install the ESP32 Board library via the Arduino Boards Manager.
 
 ### **2. Critical Setup Note**
 To match the UI design, you must **delete** the default `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory. **Extract** all the files and folders provided in this Zip file `Files_To_Copy.zip`. Copy all the `lvgl`, `ui` folders, and `lv_conf.h` from this zip file at `Documents\Arduino\libraries\` directory.
 
-If you wish to modify the UI, open the .spj file located in `/Design_File` using SquareLine Studio. Followed by using Create template button in Squareline Studio and save this template at the desired location. Further the orignal  `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory should be replaced by  `lvgl`, `ui` folders, and `lv_conf.h` from your saved location.
+If you wish to modify the UI, extract all files in `Desk32_Design_Files.zip`, and then import the project (.spj) file located in the extracted folder using SquareLine Studio. Make the desired changes, followed by using `Create template button` in Squareline Studio and save this template at the desired location. Further the orignal  `lvgl`, `ui` folders, and `lv_conf.h` from your `Documents\Arduino\libraries\` directory should be replaced by  the new `lvgl`, `ui` folders, and `lv_conf.h` from your saved location.
 
 ### **3. Configuration**
 Update your WiFi and API credentials in the main firmware:
@@ -76,7 +75,8 @@ const char* country = "";                          // Update: Your Country Code
 ---
 ## UI Design (SquareLine Studio)
 
-The interface was crafted using **SquareLine Studio**, a visual UI editor. This allowed for a "Design Thinking" approach, ensuring the UI stayed minimalist and intuitive. The tool generated the high-performance C files used to drive the 60FPS animations.
+The interface was crafted using **SquareLine Studio**, a visual UI editor. This allowed for a "Design Thinking" approach, ensuring the UI stayed minimalist and intuitive. The tool generated the high-performance C files used to drive the smooth animations.
+The following image shows all the screens being added in the UI.
 
 ![UI Screen Collage](Images/Screens.png)
 
@@ -86,9 +86,13 @@ The interface was crafted using **SquareLine Studio**, a visual UI editor. This 
 [![Desk32 Demo Video](Images/Desk32_Thumbnail.png)](https://youtu.be/7ImN2L3nb7k)
 
 *Click the above image to watch the full technical walkthrough and performance demo.*
+
 ---
 
 ## Future Improvements
+While the current version of Desk32 is a fully functional "Focus Anchor",  the ESP32-S3-BOX-3 architecture provides a massive amount of untapped potential. 
+
+The current Arduino IDE based setup is good for quick and rapid development but by using ESP-IDF more features can be implemented. The hardware is designed to scale, and I have several planned upgrades to further enhance the user experience:
 * **Local Voice Control:** Hands-free timer commands using the onboard dual-microphone array.
 * **SD-Card Persistence:** Saving tasks to the Micro-SD slot to save them permenantly.
 * **Context-Aware Logic:** Triggering ventilation/movement alerts based on integrated sensors in the sensor dock.
@@ -96,7 +100,13 @@ The interface was crafted using **SquareLine Studio**, a visual UI editor. This 
 ---
 
 ## Conclusion
-Desk32 was a personal mission to reclaim my focus. By moving toward an **"intent-first" workflow**, I found a significant boost in productivity. This project is an **Open Source Initiative** under the **GPL v3 license**. I invite you to adapt Desk32 to your own study habits.
+Building **Desk32** was more than just a technical exercise; it was a personal mission to reclaim my focus. By moving away from a **"distraction-first" workflow** centered around smartphones and towards an **"intent-first" workflow** centered around this dedicated hardware anchor, I found a significant boost in my own productivity during my exam season. The physical presence of the device on my desk serves as a constant, silent reminder of my current goals.
+
+This project is an **Open Source Initiative** released under the **GPL v3 license**. I believe that tools for self-improvement should be accessible to everyone. I invite fellow students, developers, and makers to visit the GitHub repository, and adapt Desk32 to their own unique study habits. Together, we can build better tools to navigate our increasingly distracted digital world.
+
+![Desk32 Hero Image](Images/Desk32_Final_Look.jpg)
+
+The final assembled Desk32 "Focus Anchor" ready to manage a deep work session.
 
 ---
 
